@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+            android:id="@+id/pnlButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <Button
+                android:id="@+id/btnBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textStyle="bold"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+        <Button
+                android:id="@+id/btnItalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I"
+                android:textStyle="italic"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+        <Button
+                android:id="@+id/btnUnderline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="U"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+        <Button
+                android:id="@+id/btnLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+        <Button
+                android:id="@+id/btnImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Img"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+        <Button
+                android:id="@+id/btnPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prn"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+
+    </LinearLayout>
+
+    <WebView
+            android:id="@+id/wvEditor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pnlButtons"
+            android:layout_alignParentBottom="true"
+            />
+
+</RelativeLayout>
